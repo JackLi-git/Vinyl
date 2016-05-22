@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.vinyl"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="18"
+        android:targetSdkVersion="22" />
+    
+	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+	
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.vinyl.activity.ActivityMain"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait">"
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.vinyl.activity.ActivityScan">
+        </activity>
+        <activity
+            android:name="com.example.vinyl.activity.ActivityPlayer">
+        </activity>
+        <service android:name="com.example.vinyl.service.MediaPlayerService"></service>
+        
+		<receiver 
+            android:name="com.example.vinyl.receiver.WidgetUtil"
+            android:exported="false">
+            <intent-filter >
+                <action android:name="android.intent.ACTION_WIDGET"/>
+            </intent-filter>
+        </receiver>
+        
+        <receiver 
+            android:name="com.example.vinyl.receiver.UpdateWidget"
+            android:exported="false"
+            android:icon="@drawable/ic_launcher">
+            <meta-data android:name="android.appwidget.provider"
+                android:resource="@xml/music_widget"/>
+            <intent-filter >
+                <action android:name="android.appwidget.action.WIDGET_STATUS"/>
+                <action android:name="android.appwidget.action.WIDGET_SEEK"/>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+        </receiver>
+            
+    </application>
+
+</manifest>

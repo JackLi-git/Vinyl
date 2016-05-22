@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">黑胶唱片</string>
+    <string name="local_music">本地音乐</string>
+    <string name="download_manager">下载管理</string>
+    <string name="music_library">乐库</string>
+    <string name="recent_play">最近播放</string>
+    <string name="my_love">我的最爱</string>
+    <string name="my_playlist">我的歌单</string>
+    <string name="search_hint_text">歌曲/歌手/专辑</string>
+    <string name="default_playmode">顺序播放</string>
+    <string name="set_my_love">我喜爱</string>
+    <string name="add_to_playlist">添加到</string>
+    <string name="delete">删除</string>
+    <string name="scan_music">扫描音乐</string>
+	<string name="scan_button">全盘扫描</string>
+	<string name="local_add">添加到歌单</string>
+	<string name="button_cancel">取消</string>
+	<string name="add_a_playlist">新建歌单</string>
+	
+	
+	
+	<string name="scan">扫描歌曲</string>                      
+    <string name="scan_complete">扫描完成</string>             
+    <string name="complete">完成</string>         
+    <string name="cancel">取消</string>
+    <string name="scan_before">已扫描到0首歌曲</string>               
+    <string name="scan_all">全部扫描</string>               
+</resources>

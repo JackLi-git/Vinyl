@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:orientation="horizontal"
+    android:clickable="true"
+    android:background="@color/anim_back">
+    
+    <LinearLayout
+        android:id="@+id/local_menu_add_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:clickable="true"
+        android:orientation="vertical">
+        <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="30dp"/>
+	    <ImageView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/local_add_to_playlist"/>
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="15sp"
+	        android:text="@string/add_to_playlist"/>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/local_menu_set_mylove"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:clickable="true"
+        android:orientation="vertical">
+	     <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="30dp"/>
+	    <ImageView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/local_setmylove"/>
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="15sp"
+	        android:text="@string/set_my_love"/>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/local_menu_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:clickable="true"
+        android:orientation="vertical">
+	     <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="30dp"/>
+	    <ImageView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/local_delete"/>
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="15sp"
+	        android:text="@string/delete"/>
+	</LinearLayout>
+
+</LinearLayout>

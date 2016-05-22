@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_background"
+    android:clickable="true"
+    android:orientation="vertical" >
+    <LinearLayout 
+        android:id="@+id/title_linearlayout"
+        android:layout_width="match_parent"
+        android:background="@color/blue"
+        android:gravity="center_vertical"
+    	android:layout_height="50dp">
+    	<ImageView
+    	    android:id="@+id/model_back"
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:layout_weight="1"
+    		android:clickable="true"
+			android:src="@drawable/back"/>
+    	<TextView 
+    	    android:id="@+id/model_title"
+    	    android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:layout_weight="8"
+    		android:textSize="18sp"/>
+    	<ImageView
+    	    android:id="@+id/model_search"
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:layout_weight="1"
+    		android:clickable="true"
+			android:src="@drawable/search_1"/>
+        
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:id="@+id/model_playmode_linearlayout"
+        android:layout_width="match_parent"
+    	android:layout_height="50dp"
+    	android:gravity="center_vertical"
+    	android:clickable="true">
+    	<ImageView
+    	    android:id="@+id/model_imageview_playmode"
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+			android:src="@drawable/sequence"/>
+    	<TextView 
+    	    android:id="@+id/model_textview_playmode"
+    	    android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:textSize="15sp"
+    		android:text="@string/default_playmode"/>
+	</LinearLayout>
+	
+    <ListView 
+        android:id="@+id/model_listview"
+        android:layout_width="match_parent"
+    	android:layout_height="0dp"
+    	android:layout_weight="1"
+    	android:background="@color/white"/>
+    
+	<LinearLayout 
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content">
+    	<TextView 
+    	    android:id="@+id/model_music_count"
+    	    android:layout_width="match_parent"
+    		android:layout_height="wrap_content"
+    		android:gravity="center"
+    		android:textSize="20sp"/>
+	</LinearLayout>
+</LinearLayout>

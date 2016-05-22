@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_background"
+    android:clickable="true"
+    android:orientation="vertical" >
+    <LinearLayout 
+        android:id="@+id/local_title_linearlayout"
+        android:layout_width="match_parent"
+        android:background="@color/blue"
+        android:gravity="center_vertical"
+    	android:layout_height="50dp">
+    	<ImageView
+    	    android:id="@+id/local_back"
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:layout_weight="1"
+    		android:clickable="true"
+			android:src="@drawable/back"/>
+    	<TextView 
+    	    android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:layout_weight="8"
+    		android:textSize="18sp"
+    		android:text="@string/local_music"/>
+    	<ImageView
+    	    android:id="@+id/local_search"
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:layout_weight="1"
+    		android:clickable="true"
+			android:src="@drawable/search_1"/>
+    	<ImageView
+    	    android:id="@+id/scan"
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:layout_weight="1"
+    		android:clickable="true"
+			android:src="@drawable/scan"/>
+        
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:id="@+id/playmode_linearlayout"
+        android:layout_width="match_parent"
+    	android:layout_height="50dp"
+    	android:layout_below="@id/local_title_linearlayout"
+    	android:gravity="center_vertical"
+    	android:clickable="true"
+    	android:background="@color/white">
+    	<ImageView
+    	    android:id="@+id/imageview_playmode"
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+			android:src="@drawable/sequence"/>
+    	<TextView 
+    	    android:id="@+id/textview_playmode"
+    	    android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:textSize="15sp"
+    		android:text="@string/default_playmode"/>
+	    
+	</LinearLayout>
+	
+    <ListView 
+        android:id="@+id/localmusic_listview"
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_below="@id/playmode_linearlayout"
+    	android:background="@color/white"/>
+    
+	<LinearLayout 
+        android:layout_width="match_parent"
+    	android:layout_height="80dp"
+    	android:layout_below="@id/localmusic_listview"
+    	android:background="@color/white">
+    	<TextView 
+    	    android:id="@+id/local_music_fragment_count"
+    	    android:layout_width="match_parent"
+    		android:layout_height="match_parent"
+    		android:gravity="center"
+    		android:textSize="20sp"/>
+	    
+	</LinearLayout>
+	
+</RelativeLayout>
